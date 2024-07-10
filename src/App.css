@@ -1,0 +1,174 @@
+/* Reset et styles de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #ff6b6b;
+  background-color: #f9f7f1;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Layout */
+.app-container {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(255, 107, 107, 0.2);
+  border-radius: 8px 8px 0 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  color: #ff6b6b;
+  text-align: center;
+}
+
+/* Barre de recherche */
+.search-form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  flex-grow: 1;
+  background-color: #ffb142;
+  color: #2c3e50;
+}
+
+input[type="text"]::placeholder {
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4ecdc4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45b7aa;
+}
+
+/* Bouton de recherche spécifique */
+button[type="submit"] {
+  background-color: #ffb142;
+  color: white;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffe066;
+}
+
+/* Contenu principal */
+main {
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(255, 177, 66, 0.1);
+}
+
+/* Cartes pour les packages */
+.package-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(255, 177, 66, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #ffb142;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(255, 177, 66, 0.2);
+}
+
+.package-card h2 {
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.package-card p {
+  color: #576574;
+  margin-bottom: 15px;
+}
+
+.view-button {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #ffb142;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #ffa22f;
+}
+
+/* Page de détails */
+.package-details {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(255, 177, 66, 0.1);
+  border-top: 5px solid #ff6b6b;
+}
+
+.package-details h2 {
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.package-details p {
+  margin-bottom: 15px;
+  color: #576574;
+}
+
+.maintainers-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.maintainers-list li {
+  margin-bottom: 5px;
+  color: #576574;
+}
